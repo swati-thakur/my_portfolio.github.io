@@ -13,14 +13,12 @@
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <!-----Slider---->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 <style>
+
 
 
 main, aside {
@@ -37,7 +35,7 @@ main, aside {
 aside {
   background-position: center center;
   background-size: cover;
-  height: 400px;
+  height: 500px;
   position: relative;
   margin-bottom:40%;
 }
@@ -48,11 +46,21 @@ aside {
     position: fixed;
     right: 0;
     top: 0;
-	
+	background-size: cover;
   }
 }
 
+.main{
+animation:60s slider infinite;
 
+
+}
+@keyframes slider{
+0%{background-image: url(img/profile_big1.jpg);}
+50%{background-image: url(img/profile_big2.jpg);}
+100%{background-image: url(img/profile_big3.jpg);}
+
+}
 
 
 
@@ -64,33 +72,9 @@ aside {
 </head>
 
 <body>
- <aside>  
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-  
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-
-      <div class="item active">
-        <img src="img/profile_big1.jpg" alt="Los Angeles" style="width:100%;">
-       
-      </div>
-
-      <div class="item">
-        <img src="img/profile_big2.jpg" alt="Chicago" style="width:100%;">
-        
-      </div>
-    
-      <div class="item">
-        <img src="img/profile_big3.jpg" alt="New York" style="width:100%;">
-        
-      </div>
-  
-    </div>
-
-  
-  </div>
-  </aside>
+ <aside class="main">
+	
+	 </aside>
   <!-- ======= Mobile nav toggle button ======= -->
   <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
   <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
@@ -124,7 +108,7 @@ aside {
 
           <div class="text-center">
             
-             <img src="img/project1.PNG"  class="img-fluid"><br><br>
+             <img src="img/project1.png"  class="img-fluid"><br><br>
 			 <a href="https://github.com/swati-thakur/Crime_branch_management_system_project-vb.net- "><h5><b> NATIONAL CRIME BRANCH MANAGEMENT SYSTEM</b></h5></a>
               <p><b>Languages & Database:</b> VB.NET, MsAccess<br>Maintain the record of criminals for the efficient Administration of police station.</p>
             
@@ -133,7 +117,7 @@ aside {
 
      <div class="text-center">
             
-            <img src="img/project2.PNG" class="img-fluid"><br><br>
+            <img src="img/project2.png" class="img-fluid"><br><br>
 			  <a href="http://onlinerestrowebsite.lovestoblog.com "><h5><b>FOOD ORDERING MANAGEMENT SYSTEM</b></h5></a>
               <p><b>Languages & Database:</b> HTML, CSS, PHP, JAVASCRIPT MySQl<br>Allows restaurant businesses to accept and manage orders placed over the internet.</p>
             
@@ -141,7 +125,7 @@ aside {
 		  <br><br>
 		   <div class="text-center">
             
-             <img src="img/project3.PNG"  class="img-fluid"><br><br>
+             <img src="img/project3.png"  class="img-fluid"><br><br>
 			 <a href="https://github.com/swati-thakur/HOSPItAL_MANGEMENT_SYSTEM"><h5><b>HOSPITAL MANAGEMENT SYSTEM</b></h5></a>
               <p><b>Languages & Database:</b> ASP.NET, HTML, CSS, JAVASCRIPT, C#, MySQL <br>Maintain the record of doctors, patients, employee, patients admit/discharge records, doctor leave approval/rejection, generate salary, medicine stocks, blood stocks..</p>
             
