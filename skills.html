@@ -13,10 +13,7 @@
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <!-----Slider---->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+ 
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -38,7 +35,7 @@ main, aside {
 aside {
   background-position: center center;
   background-size: cover;
-  height: 400px;
+  height: 500px;
   position: relative;
   margin-bottom:40%;
 }
@@ -53,11 +50,24 @@ aside {
   }
 }
 .skill{
-height:10rem;
-width:10rem;
+height:5rem;
+width:5rem;
 padding:10px;
 }
 
+
+
+.main{
+animation:60s slider infinite;
+
+
+}
+@keyframes slider{
+0%{background-image: url(img/profile_big1.jpg);}
+50%{background-image: url(img/profile_big2.jpg);}
+100%{background-image: url(img/profile_big3.jpg);}
+
+}
 
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -65,33 +75,9 @@ padding:10px;
 </head>
 
 <body>
- <aside>  
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-  
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-
-      <div class="item active">
-        <img src="img/profile_big1.jpg" width="100%" height="100%">
-       
-      </div>
-
-      <div class="item">
-        <img src="img/profile_big2.jpg" width="100%" height="100%">
-        
-      </div>
-    
-      <div class="item">
-        <img src="img/profile_big3.jpg" width="100%" height="100%">
-        
-      </div>
-  
-    </div>
-
-  
-  </div>
-  </aside>
+ <aside class="main">
+	
+	 </aside>
   <!-- ======= Mobile nav toggle button ======= -->
   <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
   <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
@@ -161,7 +147,7 @@ padding:10px;
 <img src="img/skill21.jpg" class="skill">
 </div>
 
-       
+   <div>    
 
      
 
