@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  
 
   <title>Portfolio</title>
  
@@ -13,10 +14,7 @@
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   
-  <!-----Slider---->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+ 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 <style>
@@ -36,7 +34,7 @@ main, aside {
 aside {
   background-position: center center;
   background-size: cover;
-  height: 400px;
+  height: 500px;
   position: relative;
   margin-bottom:40%;
 }
@@ -47,13 +45,47 @@ aside {
     position: fixed;
     right: 0;
     top: 0;
-	
+	background-size: cover;
   }
 }
 
+.main{
+animation:60s slider infinite;
 
 
+}
+@keyframes slider{
+0%{background-image: url(img/profile_big1.jpg);}
+50%{background-image: url(img/profile_big2.jpg);}
+100%{background-image: url(img/profile_big3.jpg);}
 
+}
+
+   h1 {
+            display: flex;
+            justify-content: center;
+            color: red;
+		
+        }
+  
+        span::before {
+            content: "Web Developer";
+            animation: animate infinite 3s;
+            padding-left: 10px;
+        }
+  
+        @keyframes animate {
+  
+            
+  
+            50% {
+                content: "Coder";
+            }
+  
+            75% {
+                content: "Designer";
+            }
+        }
 
 </style>
 
@@ -61,33 +93,12 @@ aside {
 </head>
 
 <body>
-<aside>  
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-  
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-
-      <div class="item active">
-        <img src="img/profile_big1.jpg" alt="Los Angeles" style="width:100%;">
+      
        
-      </div>
-
-      <div class="item">
-        <img src="img/profile_big2.jpg" alt="Chicago" style="width:100%;">
-        
-      </div>
-    
-      <div class="item">
-        <img src="img/profile_big3.jpg" alt="New York" style="width:100%;">
-        
-      </div>
-  
-    </div>
-
-  
-  </div>
-  </aside>
+     <aside class="main">
+	
+	 </aside>
+ 
   <!-- ======= Mobile nav toggle button ======= -->
   <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
   <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
@@ -120,6 +131,7 @@ aside {
 	  <h4>Hi, I am </h4>
 	  
         <h3 class="text-center"><a href="index.html"><b>SWATI DEVI</b></a></h3>
+		 <h1> <span> </span></p></h1>
 		
          <div class="social-links mt-3 text-center" style="font-size:30px;">
           <a href="https://twitter.com/thakur_swatu" class="twitter"><i class="bx bxl-twitter "></i></a>
